@@ -56,6 +56,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             startActivity(new Intent(LoginActivity.this, HomeActivity.class));
         } else if (id == R.id.registerlink) {
             switchOnRegister();
+            //schandlkf
         }
 
 
