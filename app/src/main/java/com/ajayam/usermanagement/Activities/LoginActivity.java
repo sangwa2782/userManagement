@@ -57,6 +57,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         } else if (id == R.id.registerlink) {
             switchOnRegister();
             //schandlkf
+            //sjdf sldkfjsd
         }
 
 
