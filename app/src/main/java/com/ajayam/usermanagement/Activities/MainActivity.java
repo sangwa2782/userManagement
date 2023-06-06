@@ -43,11 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
 //        switch (view.getId()) {
-//            case R.id.btnregister:
-//                Toast.makeText(this, "Register", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.loginLink:
-//                switchOnLogin();
+
 //        }
 
         int id = view.getId();
@@ -55,11 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Register", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.loginLink) {
             switchOnLogin();
-        } else {
-
         }
-
-
     }
 
     private void switchOnLogin() {

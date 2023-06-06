@@ -42,25 +42,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
 
-//        switch (view.getId()) {
-//            case R.id.btnlogin:
-//                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
-//                break;
-//            case R.id.registerlink:
-//                switchOnRegister();
-//                break;
-//        }
+//        switch (view.getId()) {}
+
 
         int id = view.getId();
         if (id == R.id.btnlogin){
             startActivity(new Intent(LoginActivity.this, HomeActivity.class));
         } else if (id == R.id.registerlink) {
             switchOnRegister();
-            //schandlkf
-            //sjdf sldkfjsd
         }
-
-
     }
 
     private void switchOnRegister() {
