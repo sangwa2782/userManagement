@@ -9,29 +9,16 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
-    private static String BASE_URL="http://192.168.247.210/UserApi/";
+    private static String BASE_URL="http://192.168.247.244/UserApi/";
     static RetrofitClient retrofitClient;
     private static Retrofit retrofit;
 
-    //for DATA VIEW IN LOGGER -----------------------------------------------
-//    private OkHttpClient.Builder builder = new OkHttpClient.Builder();
-//    private HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-    // -----------------------------------------------------------------------
 
     private RetrofitClient() {
-
-        // for DATA VIEW IN LOGGER -----------------------
-//        Gson gson = new GsonBuilder()
-//                .setLenient()
-//                .create();
-//        interceptor.level(HttpLoggingInterceptor.Level.BODY);
-//        builder.addInterceptor(interceptor);
-        // ------------------------------------------------
 
         retrofit=new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
-//                .client(builder.build())
                 .build();
     }
 
